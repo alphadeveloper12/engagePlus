@@ -8189,3 +8189,20 @@ section {
     display:none;
     }
 }
+@media (min-width: 769px) {
+  .framer-1nzlp8x {
+    --18ucmoc: 1px;
+    --1m2uej8: 1.2 0 0px;
+    --mm4la2: 1px;
+    --uewguo: 1 0 0px;
+    --yqxu0h: row;
+    opacity: 1;
+  }
+}
+/* Optional: Clear values for mobile */
+@media (max-width: 768px) {
+  .framer-1nzlp8x {
+    width:100%;
+    display: grid!important; /* or flex/grid if needed */
+  }
+}
