@@ -2245,7 +2245,8 @@ NavigationContainer [data-framer-component-type=NavigationContainer] > *, [data-
     position: relative;
     scroll-margin-top: 10px;
     width: 100%;
-    z-index: 2
+    z-index: 2;
+    margin-top: -5px!important;
 }
 
 .framer-ypjko .framer-oiuj5m, .framer-ypjko .framer-1ffs1zg {
@@ -8151,5 +8152,28 @@ NavigationContainer [data-framer-component-type=NavigationContainer] > *, [data-
 .engage__card {
     width: 100%;
     flex-shrink: 0;
-    border: 2px solid rgba(216, 231, 242, 0.07);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 0px!important
+}
+
+.engage__glass {
+    background: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    padding: 20px;
+    color: white; /* ensure text is visible */
+    margin-top: -5px!important;
+    margin: -10pxpx!important;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 100px; /* adjust based on your nav height */
 }
