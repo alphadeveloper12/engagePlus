@@ -8177,3 +8177,15 @@ html {
 section {
   scroll-margin-top: 100px; /* adjust based on your nav height */
 }
+#menu__desktop {
+    display: none!important;
+}
+
+@media screen and (min-width: 768px) {
+    #menu__desktop {
+        display: block!important; /* or block/grid depending on your layout */
+    }
+    #mobileMenu{
+    display:none;
+    }
+}
