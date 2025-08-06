@@ -71,7 +71,7 @@
         <div class="framer-uhwb70-container">
             <div class="ssr-variant hidden-1hbu3yw hidden-148qidq">
                 <header class="framer-BHLjE framer-1bbq23v framer-v-1bbq23v" data-border="true"
-                        data-framer-appear-id="1bbq23v" data-framer-name="Desktop" id="menu__desktop"
+                        data-framer-appear-id="1bbq23v" data-framer-name="Desktop"
                         style="--border-bottom-width: 2px; --border-color: var(--token-5970a3c6-0f13-482e-8fb6-b8cb7d627b04, rgba(255, 255, 255, 0.07)); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 0px; backdrop-filter: blur(12px); background-color: var(--token-4e6adbd8-4eb9-420a-b4f6-0d1bb0e81bd6, rgba(8, 9, 10, 0.75)); width: 100%; will-change: transform; opacity: 1; transform: none;"
                         tabindex="-1">
                     <div class="framer-1aqw7tj" data-framer-name="Nav Wrapper" style="opacity: 1;">
@@ -162,58 +162,58 @@
                             <!--/$--></div>
                     </div>
                 </header>
+                <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/75 px-4 py-3 flex items-center justify-between md:hidden">
+                    <!-- Logo -->
+                    <a href="/" class="w-28">
+                        <img src="./assets/images/logo.png" alt="Logo" class="w-full h-auto object-contain">
+                    </a>
+
+                    <!-- Hamburger Button -->
+                    <button id="mobileMenuButton" class="text-white focus:outline-none">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </header>
+
+                <!-- Mobile Menu (hidden by default) -->
+                <nav id="mobileMenu"
+                     class="fixed top-0 left-0 w-full h-full bg-black/90 text-white p-8 grid grid-cols-1 gap-6 text-xl font-semibold transform -translate-y-full transition-transform duration-300 ease-in-out z-50">
+                    <button id="closeMenu" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
+
+                    <a href="#about" class="hover:text-purple-400 transition">About</a>
+                    <a href="#WHO_WE_SERVE" class="hover:text-purple-400 transition">Who <span
+                            style="font-family: 'Instrument Serif';">We</span> Serve</a>
+                    <a href="#WHAT_MAKES_US_DIFFERENT" class="hover:text-purple-400 transition">What <span
+                            style="font-family: 'Instrument Serif';">Makes</span> Us <span
+                            style="font-family: 'Instrument Serif';">Different</span></a>
+                    <a href="#WHY_ENGAGE+" class="hover:text-purple-400 transition">Why <span
+                            style="font-family: 'Instrument Serif';">Engage+</span></a>
+                    <a href="#FEATURES_BENEFITS" class="hover:text-purple-400 transition">Feature<span
+                            style="font-family: 'Instrument Serif';">&</span>Benefits</a>
+                </nav>
+                <script>
+                    const mobileMenuButton = document.getElementById("mobileMenuButton");
+                    const mobileMenu = document.getElementById("mobileMenu");
+                    const closeMenu = document.getElementById("closeMenu");
+
+                    mobileMenuButton.addEventListener("click", () => {
+                        mobileMenu.classList.remove("-translate-y-full");
+                    });
+
+                    closeMenu.addEventListener("click", () => {
+                        mobileMenu.classList.add("-translate-y-full");
+                    });
+
+                    // Optional: hide on link click
+                    document.querySelectorAll("#mobileMenu a").forEach(link => {
+                        link.addEventListener("click", () => {
+                            mobileMenu.classList.add("-translate-y-full");
+                        });
+                    });
+                </script>
             </div>
         </div>
-       <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/75 px-4 py-3 flex items-center justify-between md:hidden">
-            <!-- Logo -->
-            <a href="/" class="w-28">
-                <img src="./assets/images/logo.png" alt="Logo" class="w-full h-auto object-contain">
-            </a>
-
-            <!-- Hamburger Button -->
-            <button id="mobileMenuButton" class="text-white focus:outline-none">
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-        </header>
-
-        <!-- Mobile Menu (hidden by default) -->
-        <nav id="mobileMenu"
-             class="fixed top-0 left-0 w-full h-full bg-black/90 text-white p-8 grid grid-cols-1 gap-6 text-xl font-semibold transform -translate-y-full transition-transform duration-300 ease-in-out z-50">
-            <button id="closeMenu" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
-
-            <a href="#about" class="hover:text-purple-400 transition">About</a>
-            <a href="#WHO_WE_SERVE" class="hover:text-purple-400 transition">Who <span
-                    style="font-family: 'Instrument Serif';">We</span> Serve</a>
-            <a href="#WHAT_MAKES_US_DIFFERENT" class="hover:text-purple-400 transition">What <span
-                    style="font-family: 'Instrument Serif';">Makes</span> Us <span
-                    style="font-family: 'Instrument Serif';">Different</span></a>
-            <a href="#WHY_ENGAGE+" class="hover:text-purple-400 transition">Why <span
-                    style="font-family: 'Instrument Serif';">Engage+</span></a>
-            <a href="#FEATURES_BENEFITS" class="hover:text-purple-400 transition">Feature<span
-                    style="font-family: 'Instrument Serif';">&</span>Benefits</a>
-        </nav>
-        <script>
-            const mobileMenuButton = document.getElementById("mobileMenuButton");
-            const mobileMenu = document.getElementById("mobileMenu");
-            const closeMenu = document.getElementById("closeMenu");
-
-            mobileMenuButton.addEventListener("click", () => {
-                mobileMenu.classList.remove("-translate-y-full");
-            });
-
-            closeMenu.addEventListener("click", () => {
-                mobileMenu.classList.add("-translate-y-full");
-            });
-
-            // Optional: hide on link click
-            document.querySelectorAll("#mobileMenu a").forEach(link => {
-                link.addEventListener("click", () => {
-                    mobileMenu.classList.add("-translate-y-full");
-                });
-            });
-        </script>
 
         <style>
             .framer-f0lo8w {
